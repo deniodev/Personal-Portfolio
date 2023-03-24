@@ -15,13 +15,12 @@
   top: 0;
   justify-content: space-between;
   align-items: center;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
 }
 
 #toolbar .logo {
   margin-left: 1.5rem;
-  color: #FFFFFF;
- 
+  color: #fff;
 }
 
 #toolbar .logo h3 {
@@ -30,14 +29,14 @@
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .union {
-width: 18px;
-height: 12px;
-margin-right: 41px;
-align-items: flex-end;  
+  width: 18px;
+  height: 12px;
+  margin-right: 41px;
+  align-items: flex-end;
 }
 
 #headline {
@@ -87,23 +86,23 @@ align-items: flex-end;
 }
 
 .icons ul {
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    list-style: none;
-    width: 170px;
-    margin-top: 2rem;
-    margin-left: 10px;
-    margin-right: 105px;
-    padding-left: 0;
-  }
-  
-  .icons li {
-    align-items: flex-start;
-    padding-left: 0;
-  }
-  
-  .icons img {
-    width: 20px;
-    height: 20px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  list-style: none;
+  width: 170px;
+  margin-top: 2rem;
+  margin-left: 10px;
+  margin-right: 105px;
+  padding-left: 0;
+}
+
+.icons li {
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+}
