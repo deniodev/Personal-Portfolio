@@ -46,7 +46,7 @@
   height: 100vh;
   background-image: url("./images/illustration-header-mobile.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: 99% 70%;
   padding: 10rem 2rem;
   display: flex;
   flex-direction: column;
@@ -108,3 +108,5 @@
   width: 20px;
   height: 20px;
 }
+
+
