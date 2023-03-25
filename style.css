@@ -171,10 +171,6 @@ hr {
   margin-bottom: 2%;
 }
 
-li {
-  list-style: none;
-}
-
 .btn {
   width: 49px;
   height: 40px;
@@ -213,13 +209,6 @@ li {
   font-size: 1em;
 }
 
-.project-see-btn:hover {
-  background-color: #fff5e1;
-  color: #f55800;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 0 1em #ff6b00;
-}
-
 .cards {
   width: 100%;
   margin: 10% 0;
@@ -231,7 +220,7 @@ li {
 }
 
 .card {
-  margin-top: 30%; 
+  margin-top: 30%;
 }
 
 .card h3 {
@@ -242,7 +231,7 @@ li {
   margin-left: 4%;
 }
 
-.card p{
+.card p {
   margin-left: 4%;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -267,7 +256,7 @@ li {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
-  margin-top: 4%
+  margin-top: 4%;
 }
 
 .html-btn {
