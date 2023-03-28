@@ -206,19 +206,15 @@
         </section>
 
         <section class="contact">
-         <h1 class="contact-title">
+         <h2 class="contact-title">
           I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-         </h1> 
-         <form action="https://formspree.io/f/mrgvyzlw" method="POST">
-          <div class="inputs">
-            <input class="input" type="text" placeholder="Full name" maxlength="30">
-            <input class="input" type="email" placeholder="Email address">
+         </h2> 
+         <form class="inputs" action="https://formspree.io/f/mrgvyzlw" method="POST">
+            <input class="input" type="text" placeholder="Full name" name="fullname" maxlength="30" required>
+            <input class="input" type="email" placeholder="Email address" name="email" required>
             <textarea name="msg" id="textarea" cols="30" rows="5"
-              placeholder="Write me something..." maxlength="500"></textarea>
-          </div>
-          <div>
+              placeholder="Write me something..." maxlength="500" required></textarea>
             <button class="contact-btn" type="submit">Get in touch</button>
-          </div>
          </form>
          <hr>
          <footer>
