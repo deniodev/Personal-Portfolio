@@ -209,6 +209,13 @@ hr {
   font-size: 1em;
 }
 
+.project:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+}
+
 .cards {
   width: 100%;
   margin: 10% 0;
@@ -397,4 +404,109 @@ hr {
   font-weight: 400;
   font-size: 1.3em;
   margin: 5% 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 10%;
+  padding-top: 20%;
+}
+
+.contact-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 8%;
+  color: #172b4d;
+  align-self: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  grid-column: 2;
+}
+
+input,
+textarea {
+  width: 80%;
+  margin-bottom: 4%;
+  border: none;
+  resize: none;
+  background-color: #fff;
+  padding: 4%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+textarea {
+  background-color: #fbf8f7;
+  resize: both;
+  font-style: italic;
+}
+
+.input {
+  border-bottom: 1px solid #dbd8d7;
+  justify-content: center;
+}
+
+.contact-btn {
+  width: 131px;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 20%;
+  margin-top: 2%;
+}
+
+.contact-btn:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+}
+
+.social-media {
+  grid-column: 2;
+  display: flex;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 1.1em;
+  margin-left: 10%;
+}
+
+.social-media li {
+  margin-right: 5%;
+}
+
+.contact hr {
+  background: #dfe1e6;
+  border: 1px solid #dbd8d7;
+}
+
+footer {
+  background-color: #fff;
+  margin-left: 30%;
+  margin-top: 8%;
+  margin-bottom: 15%;
 }
