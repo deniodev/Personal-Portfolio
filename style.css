@@ -102,15 +102,17 @@ main {
   border-radius: 0.4em;
 }
 
-
-
 .works {
   background-color: #fff;
   display: grid;
   grid-template-columns: 5% 90% 5%;
 }
 
-.works-title {
+.w-container {
+ grid-column: 2;
+}
+
+.w-container h2 {
   grid-column: 2;
   color: #1c1a19;
   font-family: 'Crete Round', sans-serif;
@@ -119,7 +121,7 @@ main {
   margin: 20% 4% 10% 2%;
 }
 
-hr {
+.w-container hr {
   grid-column: 2;
   background-color: #212121;
   width: 100%;
@@ -127,10 +129,13 @@ hr {
 }
 
 .work-card {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column: 2;
   width: 100%;
   margin-top: 20%;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .gymfit-img {
@@ -138,14 +143,14 @@ hr {
   margin: 10% 0;
 }
 
-.work-card h3 {
+.workcard-text h3 {
   font-family: 'Crete Round', sans-serif;
   font-size: 1.5em;
   font-weight: 150;
   margin: 4% 0;
 }
 
-.work-card p {
+.workcard-text p {
   font-family: 'Inter', sans-serif;
   margin-bottom: 3%;
   font-size: 16px;
@@ -187,6 +192,7 @@ hr {
 }
 
 .project {
+  margin-bottom: 5%;
   width: 35%;
   height: 48px;
   background-color: #ff6b00;
@@ -579,5 +585,63 @@ footer {
 
   .social-media li {
     margin-bottom: 10%;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .w-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .w-container hr {
+    width: -webkit-fill-available;
+    color: #212121;
+  }
+
+  .w-container h2 {
+    margin-top: 10%;
+    font-size: 2.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    width: 700px;
+    margin-left: 4%;
+    color: #091e42;
+    text-align: center;
+  }
+
+  .work-card {
+    display: grid;
+    grid-template-columns: 5% 50% 40% 5%;
+    margin: 0%;
+  }
+
+  .img-placeholder {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .img-placeholder img {
+    width: 25em;
+  }
+
+  .workcard-text {
+    grid-column: 3;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .btns li {
+    margin-right: 1%;
   }
 }
