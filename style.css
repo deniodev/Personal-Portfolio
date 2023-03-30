@@ -18,19 +18,30 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#toolbar .logo {
-  margin-left: 1.5rem;
+#toolbar a {
+  margin-left: 8.5%;
   color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
-#toolbar .logo a {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  color: #fff;
+#toolbar a:hover {
+  color: #ff6b00;
 }
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10%;
+  height: 55%;
+  margin-right: 8.5%; 
+}
+
+.navbar-lists {
+  display: none;
+  }
 
 .union {
   width: 18px;
@@ -509,4 +520,35 @@ footer {
   margin-left: 30%;
   margin-top: 8%;
   margin-bottom: 15%;
+}
+
+/*Desktop Version*/
+
+@media only screen and (min-width: 768px) {
+
+  .navbar {
+    width: 35%;
+  }
+
+  .union {
+    display: none;
+  }
+
+  .navbar-lists {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+
+  .navbar-list {
+    font-weight: 600;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .mail{
+    margin-top: 20%;
+  }
 }
