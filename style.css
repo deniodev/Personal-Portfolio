@@ -18,6 +18,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.logo {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
 #toolbar .logo {
   margin-left: 1.5rem;
   color: #fff;
@@ -30,11 +35,6 @@
   font-size: 1.125rem;
   line-height: 1.5rem;
   color: #fff;
-}
-
-.logo {
-  transform: rotate(360deg);
-  transition-duration: 2s;
 }
 
 .union {
