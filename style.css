@@ -212,6 +212,10 @@ main {
 }
 
 .cards {
+  grid-column: 2;
+}
+
+.card {
   width: 100%;
   margin: 10% 0;
   grid-column: 2;
@@ -221,19 +225,27 @@ main {
   background-repeat: no-repeat;
 }
 
-.card {
+.c-content {
   margin-top: 30%;
+  padding-top: 13%;
 }
 
-.card h3 {
+.c1-content {
+  padding-top: 13%;
+}
+
+
+
+.c-content h3 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 2em;
   color: #fff;
   margin-left: 4%;
+  margin-top: 20%;
 }
 
-.card p {
+.c-content p {
   margin-left: 4%;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -247,6 +259,7 @@ main {
   align-items: center;
   align-content: center;
   margin-top: 2%;
+  width: 80%;
 }
 
 .project-btn {
@@ -258,7 +271,6 @@ main {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
-  margin-top: 4%;
 }
 
 .html-btn {
@@ -296,6 +308,10 @@ main {
 
 .bottom {
   margin-bottom: 70%;
+}
+
+.desktop {
+  display: none;
 }
 
 .aboutme {
@@ -644,4 +660,102 @@ footer {
   .btns li {
     margin-right: 1%;
   }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2% 2%;
+  }
+
+  .card {
+    height: 300px;
+    width: 15em;
+    margin-bottom: 0%;
+  }
+
+  .card1 {
+    grid-column: 1;
+    background-image: url(./images/card1.png);
+  }
+  
+  .c1-content {
+    display: none;
+  }
+ 
+
+  .second {
+    grid-column: 1;
+  }
+
+  .card2 {
+    grid-column: 2;
+    background-image: url(./images/card2.png);
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
+
+  .card3 {
+    grid-column: 3;
+    background-image: url(./images/card3.png);
+  }
+
+  .card3-desktop {
+    padding-top: 26%;
+  }
+
+  .c-content {
+    margin-top: 10%;
+  }
+
+  .c-content h3 {
+    font-size: 1.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 3%;
+  }
+
+  .c-content p {
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 0.75em;
+    margin-bottom: 4%;
+  }
+
+  .cards-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 3em;
+  }
+
+  .cards-btn li {
+    margin-right: 2%;
+  }
+
+  .b-btn {
+    margin-top: 0%;
+  }
+
+  .ruby {
+    margin-top: 0%;
+  }
+
+  .project-see-btn {
+    display: none;
+  }
+
+  .first {
+    display: inherit;
+    text-decoration: none;
+    margin-top: 97.8%;
+  }
+
 }
