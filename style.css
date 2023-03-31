@@ -315,6 +315,9 @@ main {
 }
 
 .aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 40%;
   background-image: url(./images/about-me.png);
   background-repeat: no-repeat;
@@ -322,11 +325,6 @@ main {
   background-position-y: 17em;
 }
 
-.a-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .a-title {
   color: #ff6b00;
@@ -756,6 +754,79 @@ footer {
     display: inherit;
     text-decoration: none;
     margin-top: 97.8%;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10%;
+    background-image: url(./images/illustration-aboutme@2x.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 12em;
+    background-size: 50%;
+    display: flex;
+ }
+
+   .a-text {
+    width: 50%;
+    line-height: 2em;
+    margin-bottom: 2%;
+  }
+
+  .a-button {
+    margin-bottom: 20%;
+  }
+
+  .aboutme hr {
+    background-color: #fff;
+    width: 90%;
+    height: 1px;
+    margin-bottom: 30%;
+    margin-left: 5%;
+  }
+
+  .a-link {
+    height: 20%;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15%;
+  }
+
+  .lists {
+    width: 30%;
+  }
+
+  .lang {
+    background-image: url(./images/Rectangle55.png);
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+  }
+
+  .frame {
+    background-position-x: 50px;
+  }
+
+  .skill {
+    background-position-x: 50px;
+  }
+
+  .a-subtitle {
+    margin-left: 20%;
+  }
+
+  .a-skill {
+    align-self: flex-start;
+    margin-left: 23%;
+    font-size: 1.3em;
+  }
+
+  .skil {
+    margin-left: -5%;
   }
 
 }
