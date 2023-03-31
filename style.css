@@ -32,6 +32,11 @@
   color: #fff;
 }
 
+.logo {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
 .union {
   width: 18px;
   height: 12px;
