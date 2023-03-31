@@ -135,7 +135,6 @@ main {
   justify-content: flex-start;
   display: flex;
   flex-direction: column;
-
 }
 
 .gymfit-img {
@@ -323,7 +322,6 @@ main {
   background-position-y: 17em;
 }
 
-
 .a-title {
   color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
@@ -470,7 +468,7 @@ textarea {
 }
 
 .contact-btn {
- border: none; 
+  border: none;
 }
 
 .bar {
@@ -485,7 +483,6 @@ textarea {
   height: 2px;
   margin-top: 10%;
 }
-
 
 footer {
   background-color: #fff;
@@ -504,12 +501,9 @@ footer {
   margin-right: 5%;
 }
 
-
-
-/*Desktop Version*/
+/* Desktop Version */
 
 @media only screen and (min-width: 768px) {
-
   .navbar {
     width: 35%;
   }
@@ -532,7 +526,7 @@ footer {
     font-family: 'Inter', sans-serif;
   }
 
-  .mail{
+  .mail {
     margin-top: 20%;
   }
 
@@ -665,8 +659,7 @@ footer {
   .c1-content {
     display: none;
   }
- 
-
+  
   .second {
     grid-column: 1;
   }
@@ -752,8 +745,7 @@ footer {
     background-position-x: right;
     background-position-y: 12em;
     background-size: 50%;
-    display: flex;
- }
+  }
 
    .a-text {
     width: 50%;
