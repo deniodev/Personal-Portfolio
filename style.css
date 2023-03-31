@@ -655,11 +655,11 @@ footer {
     grid-column: 1;
     background-image: url(./images/card1.png);
   }
-  
+
   .c1-content {
     display: none;
   }
-  
+
   .second {
     grid-column: 1;
   }
@@ -747,7 +747,7 @@ footer {
     background-size: 50%;
   }
 
-   .a-text {
+  .a-text {
     width: 50%;
     line-height: 2em;
     margin-bottom: 2%;
@@ -844,5 +844,4 @@ footer {
     margin-top: 0%;
     margin-bottom: 3%;
   }
-
 }
