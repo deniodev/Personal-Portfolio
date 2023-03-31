@@ -427,7 +427,7 @@ main {
 .contact-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 1.92em;
   text-align: center;
   margin: 8%;
   color: #172b4d;
@@ -439,10 +439,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-form {
-  grid-column: 2;
 }
 
 input,
@@ -466,59 +462,51 @@ textarea {
 
 .input {
   border-bottom: 1px solid #dbd8d7;
+}
+
+.ab {
+  display: flex;
   justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 40%;
 }
 
 .contact-btn {
-  width: 131px;
-  height: 48px;
-  background-color: #ff6b00;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  border: none;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1em;
-  margin-bottom: 20%;
-  margin-top: 2%;
+ border: none; 
 }
 
-.contact-btn:hover {
-  background-color: #fff5e1;
-  color: #f55800;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 0 1em #ff6b00;
-}
-
-.social-media {
-  grid-column: 2;
+.bar {
   display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
-.social-media ul {
+.f-bar {
+  background-color: #dfe1e6;
+  width: 100%;
+  height: 2px;
+  margin-top: 10%;
+}
+
+
+footer {
+  background-color: #fff;
+  margin: 10% 0%;
+}
+
+.media {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   height: 1.1em;
-  margin-left: 10%;
 }
 
-.social-media li {
+.media li {
   margin-right: 5%;
 }
 
-.contact hr {
-  background: #dfe1e6;
-  border: 1px solid #dbd8d7;
-}
 
-footer {
-  background-color: #fff;
-  margin-left: 30%;
-  margin-top: 8%;
-  margin-bottom: 15%;
-}
 
 /*Desktop Version*/
 
@@ -827,6 +815,44 @@ footer {
 
   .skil {
     margin-left: -5%;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .contact-title {
+    margin-top: -60%;
+    text-align: left;
+    font-size: 2em;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-right: 10%;
+  }
+
+  .ab {
+    justify-content: flex-start;
+    margin-left: -5%;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: -15%;
+  }
+
+  .f-bar {
+    background-color: #dfe1e6;
+    width: 100%;
+    height: 2px;
+    margin-top: 0%;
+    margin-bottom: 3%;
   }
 
 }
