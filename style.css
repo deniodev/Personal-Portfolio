@@ -36,12 +36,12 @@
   justify-content: center;
   width: 10%;
   height: 55%;
-  margin-right: 8.5%; 
+  margin-right: 8.5%;
 }
 
 .navbar-lists {
   display: none;
-  }
+}
 
 .union {
   width: 18px;
@@ -56,7 +56,7 @@ main {
   background-position-y: 14em;
   background-image: url(./images/illustration-header-mobile.png);
   background-repeat: no-repeat;
-  background-color: #1c1a19;  
+  background-color: #1c1a19;
 }
 
 .headline {
@@ -109,7 +109,7 @@ main {
 }
 
 .w-container {
- grid-column: 2;
+  grid-column: 2;
 }
 
 .w-container h2 {
@@ -233,8 +233,6 @@ main {
 .c1-content {
   padding-top: 13%;
 }
-
-
 
 .c-content h3 {
   font-family: 'Crete Round', sans-serif;
