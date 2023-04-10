@@ -1,6 +1,6 @@
-const menuBtn = document.getElementById('union');
+const menuBtn = document.querySelector('.hamburger');
 const navBar = document.querySelector('.sidebar');
-const getNavLogg = document.getElementById('mylogo');
+const getNavLogg = document.querySelector('.logo');
 
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('active');
@@ -8,8 +8,8 @@ menuBtn.addEventListener('click', () => {
   getNavLogg.classList.toggle('active');
 });
 
-document.querySelectorAll('.nave-link').forEach((n) => n.addEventListener('click', () => {
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener("click", () => {
   menuBtn.classList.remove('active');
   navBar.classList.remove('active');
   getNavLogg.classList.remove('active');
-}));
+}))

@@ -10,7 +10,7 @@
 
 #toolbar {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   background-color: #3c3a39;
   height: 60px;
@@ -26,6 +26,7 @@
 
 #toolbar a {
   margin-left: 8.5%;
+  margin-top: 1%;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -45,15 +46,38 @@
   margin-right: 8.5%;
 }
 
-.navbar-lists {
-  display: none;
+.hamburger {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
-.union {
-  width: 18px;
-  height: 12px;
-  margin-right: 41px;
-  align-items: flex-end;
+.bar {
+  width: 55%;
+  height: 6%;
+  margin: 6%;
+  border-radius: 10%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-lists {
+  display: none;
 }
 
 main {
@@ -538,10 +562,6 @@ footer {
 
   #toolbar a {
     font-size: 20px;
-  }
-
-  .union {
-    display: none;
   }
 
   .navbar-lists {
