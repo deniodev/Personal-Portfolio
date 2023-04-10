@@ -18,6 +18,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.sidebar-list a {
+  font-family: 'Inter', serif;
+  color: #fff5e1;
+  font-weight: 700;
+}
+
 #toolbar a {
   margin-left: 8.5%;
   color: #fff;
@@ -121,12 +127,6 @@ main {
   color: #fff5e1;
 }
 
-.sidebar-list a {
-  font-family: 'Inter', serif;
-  color: #fff5e1;
-  font-weight: 700;
-}
-
 .asidebar {
   width: 90%;
   height: 0.1em;
@@ -138,7 +138,6 @@ main {
 #mylogo.active {
   visibility: hidden;
 }
-
 
 .works {
   background-color: #fff;
