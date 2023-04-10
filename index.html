@@ -14,9 +14,11 @@
 <body>
     <header>
       <div id="toolbar">
-        <a href="#">My Logo</a>
+        <a href="#" class="logo">My Logo</a>
         <nav class="navbar">
-          <img class="union" src="./images/Union.png" alt="humberger">
+          <div class="menu-bar" id="menu-bar">
+            <img class="union" id="union" src="./images/Union.png" alt="humberger">
+          </div>          
           <ul class="navbar-lists">
             <li class="navbar-list"><a href="#">Portfolio</a></li>
             <li class="navbar-list"><a href="#">About</a></li>
@@ -27,6 +29,17 @@
       </div>   
     </header>
     
+       <div class="sidebar">
+			<ul class="sidebar-lists">
+				<li class="sidebar-list"><a href="#portfolio">Portfolio</a></li>
+				<div class="asidebar"></div>
+				<li class="sidebar-list"><a href="#aboutme">About</a></li>
+				<div class="asidebar"></div>
+				<li class="sidebar-list"><a href="#contact">Contact</a></li>
+				<div class="asidebar"></div>
+			</ul>
+		</div>
+
     <main>
         <section class="headline">
             <div class="headline_text">
@@ -240,6 +253,6 @@
         </section>
     </main>
     
-    
+    <script src="main.js"></script>
 </body>
 </html>

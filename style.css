@@ -95,6 +95,41 @@ main {
   width: 45%;
 }
 
+.sidebar {
+  display: none;
+}
+
+.sidebar.active {
+  display: block;
+  margin-bottom: -5%;
+  z-index: 1;
+  height: calc(100vh);
+  background-color: #3c3a39;
+}
+
+.sidebar-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3c3a39;
+}
+
+.sidebar-list {
+  margin-left: 5%;
+  width: 90%;
+  font-family: 'Inter', serif;
+  color: #fff5e1;
+}
+
+.asidebar {
+  width: 90%;
+  height: 0.1em;
+  margin: 2% 0%;
+  border-radius: 10%;
+  background-color: #6f6c6b;
+}
+
+
 .works {
   background-color: #fff;
   display: flex;
