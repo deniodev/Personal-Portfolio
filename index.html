@@ -1,89 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-      <div id="toolbar">
-        <a href="#">My Logo</a>
-        <nav class="navbar">
-          <img class="union" src="./images/Union.png" alt="humberger">
-          <ul class="navbar-lists">
-            <li class="navbar-list"><a href="#">Portfolio</a></li>
-            <li class="navbar-list"><a href="#">About</a></li>
-            <li class="navbar-list"><a href="#">Contact</a></li>
-            <li class="navbar-list"><img class="mail" src="./images/Icon-Mail.png" alt="mail"></li>
-          </ul>
-        </nav>
-      </div>   
-    </header>
-    
-    <main>
-        <section class="headline">
-            <div class="headline_text">
-              <h1 class="title">
-                Hey There. <br />
-                I'm Dénio.
-              </h1>
-              <h2 class="subtitle">I'm a Software Developer</h2>
-              <p class="text">
-                I can help you build a product , feature or website Look through some
-                of my work and experience! If you like what you see and have a project
-                you need coded, don’t hesitate to contact me.
-              </p>
-            </div>        
-            <div class="icons">
-              <ul class="social-media">
-                <li><a href="https://github.com/deniodev"><img src="./images/github.png" alt="github icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/denionhanale"><img src="./images/Linkedin.png" alt="linkedin icon"></a></li>
-                <li><a href="#"><img src="./images/angelist.png" alt="angelist icon"></a></li>
-                <li><a href="https://twitter.com/DNhanale"><img src="./images/twitter.png" alt="twitter icon"></a></li>
-                <li><a href="#"><img src="./images/Medium.png" alt="Medium icon"></a></li>
-              </ul>
-            </div>
-        </section>
+  <header>
+    <div id="toolbar">
+      <a href="#" id="mylogo" class="logo">My Logo</a>
+      <nav class="navbar">
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="navbar-lists">
+          <li class="navbar-list"><a href="#toolbar">Portfolio</a></li>
+          <li class="navbar-list"><a href="#aboutme">About</a></li>
+          <li class="navbar-list"><a href="#contact">Contact</a></li>
+          <li class="navbar-list"><img class="mail" src="./images/Icon-Mail.png" alt="mail"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section class="works">
+  <div class="sidebar">
+    <ul class="sidebar-lists">
+      <li class="sidebar-list"><a href="#toolbar" class="nav-link">Portfolio</a></li>
+      <div class="asidebar"></div>
+      <li class="sidebar-list"><a href="#aboutme" class="nav-link">About</a></li>
+      <div class="asidebar"></div>
+      <li class="sidebar-list"><a href="#contact" class="nav-link">Contact</a></li>
+      <div class="asidebar"></div>
+    </ul>
+  </div>
+
+  <main>
+    <section class="headline">
+      <div class="headline_text">
+        <h1 class="title">
+          Hey There. <br />
+          I'm Dénio.
+        </h1>
+        <h2 class="subtitle">I'm a Software Developer</h2>
+        <p class="text">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hesitate to contact me.
+        </p>
+      </div>
+      <div class="icons">
+        <ul class="social-media">
+          <li><a href="https://github.com/deniodev"><img src="./images/github.png" alt="github icon"></a></li>
+          <li><a href="https://www.linkedin.com/in/denionhanale"><img src="./images/Linkedin.png"
+                alt="linkedin icon"></a></li>
+          <li><a href="#"><img src="./images/angelist.png" alt="angelist icon"></a></li>
+          <li><a href="https://twitter.com/DNhanale"><img src="./images/twitter.png" alt="twitter icon"></a></li>
+          <li><a href="#"><img src="./images/Medium.png" alt="Medium icon"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="works">
+      <div>
+        <h3 class="works-header">My Recent Works <span class="works-header-hr"></span> </h3>
+        <div class="w-container">
           <div>
-            <h3 class="works-header">My Recent Works <span class="works-header-hr"></span> </h3>
-          <div class="w-container">
+            <div class="img-placeholder">
+              <img src="./images/Img-Placeholder.png" alt="yoga" class="img">
+            </div>
+          </div>
+          <div class="work-card">
+            <h2 class="work-card-header">Multi-Post Stories</h2>
+            <p class="work-card-text">A daily selection of privately personalized reads; no accounts or sign-ups
+              required.
+              This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+              standar dummy text.</p>
+            <ul class="btns">
+              <li><button class="btn">CSS</button></li>
+              <li><button class="btn">HTML</button></li>
+              <li><button class="btn">Bootstrap</button></li>
+              <li><button class="btn">Ruby</button></li>
+            </ul>
             <div>
-              <div class="img-placeholder">
-            <img src="./images/Img-Placeholder.png" alt="yoga" class="img">
+              <button class="project">See Project</button>
+            </div>
           </div>
         </div>
-        <div class="work-card">
-        <h2 class="work-card-header">Multi-Post Stories</h2>
-        <p class="work-card-text">A daily selection of privately personalized reads; no accounts or sign-ups required. 
-          This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text.</p>
-          <ul class="btns">
-          <li><button class="btn">CSS</button></li>
-          <li><button class="btn">HTML</button></li>
-          <li><button class="btn">Bootstrap</button></li>
-          <li><button class="btn">Ruby</button></li>
-          </ul>
-        <div>
-          <button class="project">See Project</button>
-        </div>
-        </div>
-        </div>
-          </div>
-          <div class="cards">
-          <div class="card1">
+      </div>
+      <div class="cards">
+        <div class="card1">
           <div class="card1-header">
             <h3>Professional art <span>printing Data More</span></p>
           </div>
           <div class="card1-text">
-            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard</p>
+            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the
+              industry's standard</p>
           </div>
           <ul class="cards-btn">
             <li><button class="project-btn">html</button></li>
@@ -92,12 +112,13 @@
           </ul>
           <button class="project-see-btn">See project</button>
         </div>
-         <div class="card2">
+        <div class="card2">
           <div class="card1-header">
             <h3>Data Dashboard <span> Healthcare</span></p>
           </div>
           <div class="card1-text">
-            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard</p>
+            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the
+              industry's standard</p>
           </div>
           <ul class="cards-btn">
             <li><button class="project-btn">html</button></li>
@@ -111,7 +132,8 @@
             <h3>Website <span>Portfolio</span></p>
           </div>
           <div class="card1-text">
-            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard</p>
+            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the
+              industry's standard</p>
           </div>
           <ul class="cards-btn">
             <li><button class="project-btn">html</button></li>
@@ -125,7 +147,8 @@
             <h3>Professional art <span>printing Data More</span></p>
           </div>
           <div class="card1-text">
-            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard</p>
+            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the
+              industry's standard</p>
           </div>
           <ul class="cards-btn">
             <li><button class="project-btn">html</button></li>
@@ -139,7 +162,8 @@
             <h3>Data Dashboard <span>Healthcare</span></p>
           </div>
           <div class="card1-text">
-            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard</p>
+            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the
+              industry's standard</p>
           </div>
           <ul class="cards-btn">
             <li><button class="project-btn">html</button></li>
@@ -153,7 +177,8 @@
             <h3>Website <span>Portfolio</span></p>
           </div>
           <div class="card1-text">
-            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard</p>
+            <p>A daily selection of privately personalized reads; no accounts of sign-ups required. has been the
+              industry's standard</p>
           </div>
           <ul class="cards-btn">
             <li><button class="project-btn">html</button></li>
@@ -163,83 +188,91 @@
           <button class="project-see-btn">See project</button>
         </div>
       </div>
-        </section>
+    </section>
 
-        <section class="aboutme">
-          <div>
-            <h2 class="a-title">About me</h2>
-            <p class="a-text">
-                Hello I'm a software developer! I can help you build a product , feature or website Look
-                through some of my work and experience! If you like what you see and have a project you need coded, don't
-                hestiate to contact me.  
-            </p>
-            <div class="a-link">
-                <button class="a-button">Get My Resume</button>.
-            </div>
-          </div>
-          <hr>    
-          <div>
-            <ul class="skills">
-                <li class="lists">
-                    <ul class="a-skills lang">
-                      <li class="a-subtitle"><h4>Language</h4></li>
-                      <li class="a-skill">JavaScript</li>
-                      <li class="a-skill">Ruby</li>
-                      <li class="a-skill">HTML</li>
-                      <li class="a-skill">CSS</li>
-                    </ul>  
-                </li>
-                <li class="lists">
-                    <ul class="a-skills frame">
-                      <li class="a-subtitle"><h4>Frameworks</h4></li>
-                      <li class="a-skill">React.js</li>
-                      <li class="a-skill">Ruby on Rails</li>
-                      <li class="a-skill">RSpec</li>
-                      <li class="a-skill">Capybara</li>
-                    </ul>  
-                </li>
-                <li class="lists">
-                    <ul class="a-skills skill">
-                      <li class="a-subtitle"><h4>Skills</h4></li>
-                      <li class="a-skill">Database Management</li>
-                      <li class="a-skill">Version Control</li>
-                      <li class="a-skill">CLI</li>
-                      <li class="a-skill">API Design</li>
-                      <li class="a-skill">Web Development</li>
-                    </ul>  
-                </li>
+    <section id="aboutme" class="aboutme">
+      <div>
+        <h2 class="a-title">About me</h2>
+        <p class="a-text">
+          Hello I'm a software developer! I can help you build a product , feature or website Look
+          through some of my work and experience! If you like what you see and have a project you need coded, don't
+          hestiate to contact me.
+        </p>
+        <div class="a-link">
+          <button class="a-button">Get My Resume</button>.
+        </div>
+      </div>
+      <hr>
+      <div>
+        <ul class="skills">
+          <li class="lists">
+            <ul class="a-skills lang">
+              <li class="a-subtitle">
+                <h4>Language</h4>
+              </li>
+              <li class="a-skill">JavaScript</li>
+              <li class="a-skill">Ruby</li>
+              <li class="a-skill">HTML</li>
+              <li class="a-skill">CSS</li>
             </ul>
-          </div> 
-        </section>
+          </li>
+          <li class="lists">
+            <ul class="a-skills frame">
+              <li class="a-subtitle">
+                <h4>Frameworks</h4>
+              </li>
+              <li class="a-skill">React.js</li>
+              <li class="a-skill">Ruby on Rails</li>
+              <li class="a-skill">RSpec</li>
+              <li class="a-skill">Capybara</li>
+            </ul>
+          </li>
+          <li class="lists">
+            <ul class="a-skills skill">
+              <li class="a-subtitle">
+                <h4>Skills</h4>
+              </li>
+              <li class="a-skill">Database Management</li>
+              <li class="a-skill">Version Control</li>
+              <li class="a-skill">CLI</li>
+              <li class="a-skill">API Design</li>
+              <li class="a-skill">Web Development</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="contact">
-         <h2 class="contact-title">
-          I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-         </h2> 
-         <form action="https://formspree.io/f/mrgvyzlw" method="POST">
-            <div class="inputs">
-              <input class="input" type="text" placeholder="Full name" name="fullname" maxlength="30" required>
-              <input class="input" type="email" placeholder="Email address" name="email" required>
-              <textarea name="msg" id="textarea" cols="30" rows="5"
-              placeholder="Write me something..." maxlength="500" required></textarea>
-            </div>
-            <div class="ab">
-              <button class="project contact-btn" type="submit">Get in touch</button>
-            </div>  
-         </form>
-         <footer>
-           <div class="f-bar"></div>
-           <ul class="media">
-            <li><a href="https://github.com/deniodev"><img src="./images/Icon-GitHub.png" alt="github icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/denionhanale/"><img src="./images/Icon-Linkedin.png" alt="linkedin icon"></a></li>
-                <li><a href="#"><img src="./images/Icon-Angelist.png" alt="angelist icon"></a></li>
-                <li><a href="https://twitter.com/DNhanale"><img src="./images/Icon-Twitter.png" alt="twitter icon"></a></li>
-                <li><a href="#"><img src="./images/Icon-Medium.png" alt="Medium icon"></a></li>
-          </ul>
-        </footer>       
-        </section>
-    </main>
-    
-    
+    <section class="contact" id="contact">
+      <h2 class="contact-title">
+        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+      </h2>
+      <form action="https://formspree.io/f/mrgvyzlw" method="POST">
+        <div class="inputs">
+          <input class="input" type="text" placeholder="Full name" name="fullname" maxlength="30" required>
+          <input class="input" type="email" placeholder="Email address" name="email" required>
+          <textarea name="msg" id="textarea" cols="30" rows="5" placeholder="Write me something..." maxlength="500"
+            required></textarea>
+        </div>
+        <div class="ab">
+          <button class="project contact-btn" type="submit">Get in touch</button>
+        </div>
+      </form>
+      <footer>
+        <div class="f-bar"></div>
+        <ul class="media">
+          <li><a href="https://github.com/deniodev"><img src="./images/Icon-GitHub.png" alt="github icon"></a></li>
+          <li><a href="https://www.linkedin.com/in/denionhanale/"><img src="./images/Icon-Linkedin.png"
+                alt="linkedin icon"></a></li>
+          <li><a href="#"><img src="./images/Icon-Angelist.png" alt="angelist icon"></a></li>
+          <li><a href="https://twitter.com/DNhanale"><img src="./images/Icon-Twitter.png" alt="twitter icon"></a></li>
+          <li><a href="#"><img src="./images/Icon-Medium.png" alt="Medium icon"></a></li>
+        </ul>
+      </footer>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
