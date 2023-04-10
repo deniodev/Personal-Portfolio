@@ -14,15 +14,15 @@
 <body>
     <header>
       <div id="toolbar">
-        <a href="#" class="logo">My Logo</a>
+        <a href="#" id="mylogo" class="logo">My Logo</a>
         <nav class="navbar">
           <div class="menu-bar" id="menu-bar">
             <img class="union" id="union" src="./images/Union.png" alt="humberger">
           </div>          
           <ul class="navbar-lists">
-            <li class="navbar-list"><a href="#">Portfolio</a></li>
-            <li class="navbar-list"><a href="#">About</a></li>
-            <li class="navbar-list"><a href="#">Contact</a></li>
+            <li class="navbar-list"><a href="#headline">Portfolio</a></li>
+            <li class="navbar-list"><a href="#aboutme">About</a></li>
+            <li class="navbar-list"><a href="#contact">Contact</a></li>
             <li class="navbar-list"><img class="mail" src="./images/Icon-Mail.png" alt="mail"></li>
           </ul>
         </nav>
@@ -31,7 +31,7 @@
     
        <div class="sidebar">
 			<ul class="sidebar-lists">
-				<li class="sidebar-list"><a href="#portfolio">Portfolio</a></li>
+				<li class="sidebar-list"><a href="#headline">Portfolio</a></li>
 				<div class="asidebar"></div>
 				<li class="sidebar-list"><a href="#aboutme">About</a></li>
 				<div class="asidebar"></div>
@@ -178,7 +178,7 @@
       </div>
         </section>
 
-        <section class="aboutme">
+        <section id="aboutme" class="aboutme">
           <div>
             <h2 class="a-title">About me</h2>
             <p class="a-text">
@@ -229,7 +229,7 @@
          <h2 class="contact-title">
           I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
          </h2> 
-         <form action="https://formspree.io/f/mrgvyzlw" method="POST">
+         <form id="contact" action="https://formspree.io/f/mrgvyzlw" method="POST">
             <div class="inputs">
               <input class="input" type="text" placeholder="Full name" name="fullname" maxlength="30" required>
               <input class="input" type="email" placeholder="Email address" name="email" required>
