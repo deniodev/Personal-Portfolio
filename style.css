@@ -121,6 +121,12 @@ main {
   color: #fff5e1;
 }
 
+.sidebar-list a{
+  font-family: 'Inter', serif;
+  color: #fff5e1;
+  font-weight: 700;
+}
+
 .asidebar {
   width: 90%;
   height: 0.1em;
