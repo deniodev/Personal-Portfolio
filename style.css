@@ -121,7 +121,7 @@ main {
   color: #fff5e1;
 }
 
-.sidebar-list a{
+.sidebar-list a {
   font-family: 'Inter', serif;
   color: #fff5e1;
   font-weight: 700;
@@ -130,9 +130,13 @@ main {
 .asidebar {
   width: 90%;
   height: 0.1em;
-  margin: 2% 0%;
+  margin: 2% 2%;
   border-radius: 10%;
   background-color: #6f6c6b;
+}
+
+#mylogo.active {
+  visibility: hidden;
 }
 
 
