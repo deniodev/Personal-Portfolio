@@ -55,7 +55,7 @@
 }
 
 .bar {
-  width: 55%;
+  width: 40%;
   height: 6%;
   margin: 6%;
   border-radius: 10%;
@@ -151,6 +151,7 @@ main {
   width: 90%;
   font-family: 'Inter', serif;
   color: #fff5e1;
+  font-size: 32px;
 }
 
 .asidebar {
