@@ -365,6 +365,87 @@ main {
   flex-direction: column;
 }
 
+.main-class {
+  position:absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #fff;
+ }
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% -2% 20% 5%;
+  align-items: center;
+}
+
+.popup-close-btn {
+  margin-right: 8%;
+  margin-top: -6%;
+  color: #67798e;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.5em;
+}
+
+.popup-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #172b4d;
+}
+
+.popup-text {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.popup-btn-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+.popup-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.feature-ruby-popup {
+  width: 8em;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto 4%;
+}
+
+.popup-project-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-btn-popup {
+  width: 8em;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: 1px solid #8993a4;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 5%;
+} 
+
 .aboutme {
   display: flex;
   flex-direction: column;
