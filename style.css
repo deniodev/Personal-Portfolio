@@ -372,7 +372,7 @@ main {
   bottom: 5%;
   background-color: #fff;
   z-index: 10;
-  height: 80vh;
+  height: 80%;
   transform: scale(0);
   transition: 0.2s ease-in-out;
   overflow-y: scroll;
@@ -386,7 +386,7 @@ main {
 .popup-header {
   display: flex;
   justify-content: space-between;
-  margin: 5% -2% 20% 5%;
+  margin: 5% -2% 10% 5%;
   align-items: center;
 }
 
@@ -413,13 +413,16 @@ main {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   margin-bottom: 7%;
+  margin-top: 7%;
+  text-align: justify;
 }
 
 .popup-btn-container {
   display: flex;
   justify-content: flex-start;
   padding-left: 3%;
-}
+  margin-bottom: ;
+  }
 
 .popup-feature {
   font-family: 'Poppins', sans-serif;
@@ -1051,6 +1054,7 @@ footer {
 
   .popup-title {
     font-size: 2em;
+    margin-left: -1%;
   }
 
   .popup-text {
@@ -1062,6 +1066,7 @@ footer {
 
   .popup-btn-container {
     margin-bottom: 10%;
+    margin-left: 0.5%;
   }
 
   .popup-content {
@@ -1108,7 +1113,7 @@ footer {
   }
 
   .popup {
-    height: 80vh;
+    height: 100vh;
   }
 
   .popup-header {
@@ -1137,6 +1142,7 @@ footer {
     align-items: flex-start;
     font-size: 1.5em;
     margin-bottom: 7%;
+    margin-top: 0;
   }
 
   .popup-project-btn-container {
@@ -1179,7 +1185,7 @@ footer {
   }
 
   .popup {
-    height: 80vh;
+    height: 90vh;
   }
 
   .popup-header {
@@ -1196,24 +1202,29 @@ footer {
   }
 
   .popup-content img {
-    width: 41em;
-    height: 28em;
+    width: 45em;
+    height: 35em;
   }
 
   .popup-btn-container {
     margin-bottom: 4%;
+    margin-left: 1%;
+    
   }
 
   .popup-text {
     align-items: flex-start;
     font-size: 1.5em;
     margin-bottom: 7%;
+    margin-top: 0;
   }
 
   .popup-project-btn-container {
     justify-content: space-evenly;
     width: 40%;
     padding-right: 2%;
+    margin-left: 41%;
+    margin-top: 2%;
   }
 
   .boostrap-btn {
