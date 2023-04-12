@@ -14,7 +14,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   getNavLogg.classList.remove('active');
 }));
 
-const projects = document.getElementById('cards')
+const projects = document.getElementById('cards');
 
 const firstProjects = [{
   grid: 1,
@@ -202,7 +202,6 @@ const modalCards = [
   },
 ];
 
-
 const popupContainer = document.getElementById('popup-container');
 
 const renderPopup = (modalCards, popupContainer) => {
@@ -250,13 +249,11 @@ const openPopup = (modal) => {
   overlay.classList.add('active');
 };
 
-
 const closePopup = (modal) => {
   if (modal == null) return;
   modal.classList.remove('active');
   overlay.classList.remove('active');
 };
-
 
 openPopupButtons.forEach((button) => {
   button.addEventListener('click', () => {
@@ -265,14 +262,12 @@ openPopupButtons.forEach((button) => {
   });
 });
 
-
 closePopupButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const popup = button.closest('.popup');
     closePopup(popup);
   });
 });
-
 
 overlay.addEventListener('click', () => {
   const popups = document.querySelectorAll('.popup.active');
