@@ -134,6 +134,7 @@ const modalCards = [
     id: 1,
     title: 'Multi Post Stories',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: './images/popup-card1.png',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -144,6 +145,7 @@ const modalCards = [
     id: 2,
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: './images/popup-card2.png',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -154,6 +156,7 @@ const modalCards = [
     id: 3,
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: './images/popup-card3.png',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -164,6 +167,7 @@ const modalCards = [
     id: 4,
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: './images/popup-card4.png',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -174,6 +178,7 @@ const modalCards = [
     id: 5,
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: './images/popup-card5.png',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -184,6 +189,7 @@ const modalCards = [
     id: 6,
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: './images/popup-card6.png',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -194,6 +200,7 @@ const modalCards = [
     id: 7,
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    image: './images/popup-card7.png',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -222,7 +229,7 @@ const renderPopup = (modalCards, popupContainer) => {
                               </ul>
                             </div>
                             <div class="popup-content">
-                              <img src="./images/popup.png">
+                              <img src="${e.image}">
                               <p class="popup-text">${e.text}</p>
                             </div>
                             <div class="popup-project-btn-container">

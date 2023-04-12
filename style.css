@@ -1107,24 +1107,44 @@ footer {
     font-size: 1.3em;
   }
 
-  .popup-content {
-    height: 30vh;
+  .popup {
+    height: 80vh;
   }
 
-  .popup-text {
-    font-size: 1em;
-    display: flex;
-    align-items: center;
+  .popup-header {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-content {
+    height: fit-content;
+    margin-bottom: -5%;
+  }
+
+  .popup-content img {
+    width: 659px;
+    height: 448px;
   }
 
   .popup-btn-container {
-    padding-left: 4.5%;
+    margin-bottom: 1%;
+  }
+
+  .popup-text {
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 7%;
   }
 
   .popup-project-btn-container {
     justify-content: space-evenly;
-    width: 50%;
-    padding-right: 20%;
+    width: 40%;
+    padding-right: 0%;
+    margin-left: 52%;
+    margin-top: 1%;
   }
 
   .boostrap-btn {
