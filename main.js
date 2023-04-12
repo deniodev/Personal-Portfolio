@@ -101,7 +101,7 @@ const renderFirstProjects = (firstProjects, containerName) => {
   </ul>
   <button class="project-see-btn" data-modal-target='#popup${item.id}'>See project</button>
 </div>`;
-containerName.appendChild(card);
+    containerName.appendChild(card);
   });
 };
 
@@ -122,9 +122,161 @@ const renderSecondProjects = (firstProjects, containerName) => {
   </ul>
   <button class="project-see-btn" data-modal-target='#popup${item.id}'>See project</button>
 </div>`;
-containerName.appendChild(card);
+    containerName.appendChild(card);
   });
 };
 
 renderFirstProjects(firstProjects, projects);
 renderSecondProjects(secondProjects, projects);
+
+const modalCards = [
+  {
+    id: 1,
+    title: 'Multi Post Stories',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    features: {
+      tech1: 'HTML',
+      tech2: 'Boostrap',
+      tech3: 'Ruby on rails',
+    },
+  },
+  {
+    id: 2,
+    title: 'Keeping track of hundreds  of components website',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    features: {
+      tech1: 'HTML',
+      tech2: 'Boostrap',
+      tech3: 'Ruby on rails',
+    },
+  },
+  {
+    id: 3,
+    title: 'Keeping track of hundreds  of components website',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    features: {
+      tech1: 'HTML',
+      tech2: 'Boostrap',
+      tech3: 'Ruby on rails',
+    },
+  },
+  {
+    id: 4,
+    title: 'Keeping track of hundreds  of components website',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    features: {
+      tech1: 'HTML',
+      tech2: 'Boostrap',
+      tech3: 'Ruby on rails',
+    },
+  },
+  {
+    id: 5,
+    title: 'Keeping track of hundreds  of components website',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    features: {
+      tech1: 'HTML',
+      tech2: 'Boostrap',
+      tech3: 'Ruby on rails',
+    },
+  },
+  {
+    id: 6,
+    title: 'Keeping track of hundreds  of components website',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    features: {
+      tech1: 'HTML',
+      tech2: 'Boostrap',
+      tech3: 'Ruby on rails',
+    },
+  },
+  {
+    id: 7,
+    title: 'Keeping track of hundreds  of components website',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    features: {
+      tech1: 'HTML',
+      tech2: 'Boostrap',
+      tech3: 'Ruby on rails',
+    },
+  },
+];
+
+
+const popupContainer = document.getElementById('popup-container');
+
+const renderPopup = (modalCards, popupContainer) => {
+  modalCards.forEach((e) => {
+    const modalCard = document.createElement('div');
+    modalCard.classList = 'popup';
+    modalCard.id = `popup${e.id}`;
+    modalCard.innerHTML = `<div class="popup-wrap-content">
+                            <div class="popup-header">
+                              <h2 class="popup-title">${e.title}</h2><button class="popup-close-btn"
+                              data-close-button>&times;</button>
+                            </div>
+                            <div>
+                              <ul class="popup-btn-container">
+                              <li><button class="feature-btn popup-feature" type="button">${e.features.tech1}</button></li>
+                              <li><button class="feature-btn boostrap popup-feature" type="button">${e.features.tech2}</button></li>
+                              <li><button class="feature-btn feature-ruby-popup popup-feature" type="button">${e.features.tech3}</button></li>
+                              </ul>
+                            </div>
+                            <div class="popup-content">
+                              <img src="./images/popup.png">
+                              <p class="popup-text">${e.text}</p>
+                            </div>
+                            <div class="popup-project-btn-container">
+                              <a href="#"><button class="project-btn-popup">See Live <img src="./images/popup2.png"
+                              alt="See Live"></button></a>
+                              <a href="#"><button class="project-btn-popup">See Source <img src="./images/popup1.png"
+                              alt="Github"></button></a>
+                            </div>
+                            </div>`;
+
+    popupContainer.appendChild(modalCard);
+  });
+};
+
+renderPopup(modalCards, popupContainer);
+
+const closePopupButtons = document.querySelectorAll('[data-close-button]');
+const openPopupButtons = document.querySelectorAll('[data-modal-target]');
+const overlay = document.getElementById('overlay');
+
+const openPopup = (modal) => {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+};
+
+
+const closePopup = (modal) => {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+};
+
+
+openPopupButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const popup = document.querySelector(button.dataset.modalTarget);
+    openPopup(popup);
+  });
+});
+
+
+closePopupButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const popup = button.closest('.popup');
+    closePopup(popup);
+  });
+});
+
+
+overlay.addEventListener('click', () => {
+  const popups = document.querySelectorAll('.popup.active');
+  popups.forEach((modal) => {
+    closePopup(modal);
+  });
+});

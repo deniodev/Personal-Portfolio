@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
   list-style: none;
 }
 
@@ -365,14 +364,24 @@ main {
   flex-direction: column;
 }
 
-.main-class {
-  position:absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
+.popup {
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
   background-color: #fff;
- }
+  z-index: 10;
+  height: 80vh;
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.popup.active {
+  transform: scale(1);
+}
 
 .popup-header {
   display: flex;
@@ -403,6 +412,7 @@ main {
   font-size: 1em;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  margin-bottom: 7%;
 }
 
 .popup-btn-container {
@@ -418,7 +428,12 @@ main {
 }
 
 .feature-ruby-popup {
-  width: 8em;
+  width: 10em;
+}
+
+.boostrap {
+  width: 95px;
+  height: 40px;
 }
 
 .popup-content {
@@ -431,6 +446,30 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.feature-btn {
+  width: 100px;
+  height: 41px;
+  background-color: #fff;
+  border: 1px solid #8993a4;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.project-feature-btn {
+  width: 49px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
 }
 
 .project-btn-popup {
@@ -444,7 +483,24 @@ main {
   font-weight: 700;
   font-size: 1em;
   margin-bottom: 5%;
-} 
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+  filter: blur(10px);
+}
 
 .aboutme {
   display: flex;
@@ -984,6 +1040,45 @@ footer {
     margin-right: 1%;
     margin-bottom: -15%;
   }
+
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    margin: 5% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-text {
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-left: 2%;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 10%;
+  }
+
+  .popup-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup-project-btn-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 48%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1011,6 +1106,30 @@ footer {
     margin-left: 23%;
     font-size: 1.3em;
   }
+
+  .popup-content {
+    height: 30vh;
+  }
+
+  .popup-text {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  .popup-btn-container {
+    padding-left: 4.5%;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 50%;
+    padding-right: 20%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1037,5 +1156,92 @@ footer {
     align-self: flex-start;
     margin-left: 23%;
     font-size: 1.3em;
+  }
+
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-content {
+    height: fit-content;
+    margin-bottom: -5%;
+  }
+
+  .popup-content img {
+    width: 41em;
+    height: 28em;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 4%;
+  }
+
+  .popup-text {
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 7%;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 40%;
+    padding-right: 2%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
+
+}
+
+@media only screen and (min-width: 2560px) {
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-content {
+    height: fit-content;
+    margin-bottom: -5%;
+  }
+
+  .popup-content img {
+    width: 41em;
+    height: 28em;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 4%;
+  }
+
+  .popup-text {
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 7%;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 40%;
+    padding-right: 2%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
   }
 }
