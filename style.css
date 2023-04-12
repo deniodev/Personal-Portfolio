@@ -421,7 +421,6 @@ main {
   display: flex;
   justify-content: flex-start;
   padding-left: 3%;
-  margin-bottom: ;
   }
 
 .popup-feature {
@@ -1209,7 +1208,6 @@ footer {
   .popup-btn-container {
     margin-bottom: 4%;
     margin-left: 1%;
-    
   }
 
   .popup-text {
