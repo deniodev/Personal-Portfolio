@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
   list-style: none;
 }
 
@@ -363,6 +362,146 @@ main {
 .cards {
   display: flex;
   flex-direction: column;
+}
+
+.popup {
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-color: #fff;
+  z-index: 10;
+  height: 80%;
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.popup.active {
+  transform: scale(1);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% -2% 10% 5%;
+  align-items: center;
+}
+
+.popup-close-btn {
+  margin-right: 8%;
+  margin-top: -6%;
+  color: #67798e;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.5em;
+}
+
+.popup-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #172b4d;
+}
+
+.popup-text {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-bottom: 7%;
+  margin-top: 7%;
+  text-align: justify;
+}
+
+.popup-btn-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+.popup-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.feature-ruby-popup {
+  width: 10em;
+}
+
+.boostrap {
+  width: 95px;
+  height: 40px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto 4%;
+}
+
+.popup-project-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.feature-btn {
+  width: 100px;
+  height: 41px;
+  background-color: #fff;
+  border: 1px solid #8993a4;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.project-feature-btn {
+  width: 49px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+}
+
+.project-btn-popup {
+  width: 8em;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: 1px solid #8993a4;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 5%;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+  filter: blur(10px);
 }
 
 .aboutme {
@@ -903,6 +1042,47 @@ footer {
     margin-right: 1%;
     margin-bottom: -15%;
   }
+
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    margin: 5% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+    margin-left: -1%;
+  }
+
+  .popup-text {
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-left: 2%;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 10%;
+    margin-left: 0.5%;
+  }
+
+  .popup-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup-project-btn-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 48%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -930,6 +1110,51 @@ footer {
     margin-left: 23%;
     font-size: 1.3em;
   }
+
+  .popup {
+    height: 100vh;
+  }
+
+  .popup-header {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-content {
+    height: fit-content;
+    margin-bottom: -5%;
+  }
+
+  .popup-content img {
+    width: 659px;
+    height: 448px;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 1%;
+  }
+
+  .popup-text {
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 7%;
+    margin-top: 0;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 40%;
+    padding-right: 0%;
+    margin-left: 52%;
+    margin-top: 1%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -956,5 +1181,95 @@ footer {
     align-self: flex-start;
     margin-left: 23%;
     font-size: 1.3em;
+  }
+
+  .popup {
+    height: 90vh;
+  }
+
+  .popup-header {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-content {
+    height: fit-content;
+    margin-bottom: -5%;
+  }
+
+  .popup-content img {
+    width: 45em;
+    height: 35em;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 4%;
+    margin-left: 1%;
+  }
+
+  .popup-text {
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 7%;
+    margin-top: 0;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 40%;
+    padding-right: 2%;
+    margin-left: 41%;
+    margin-top: 2%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-content {
+    height: fit-content;
+    margin-bottom: -5%;
+  }
+
+  .popup-content img {
+    width: 41em;
+    height: 28em;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 4%;
+  }
+
+  .popup-text {
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 7%;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 40%;
+    padding-right: 2%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
   }
 }
