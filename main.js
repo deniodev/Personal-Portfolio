@@ -282,3 +282,20 @@ overlay.addEventListener('click', () => {
     closePopup(modal);
   });
 });
+
+const form = document.forms[0];
+
+form.addEventListener('submit', (e) => {
+  const email = form.elements.email.value;
+  const message = document.querySelector('small');
+  if (email === email.toLocaleLowerCase()) {
+    message.classList.remove('visible');
+    message.classList.add('invisible');
+    form.onsubmit();
+  } else {
+    message.innerHTML = "Use lower case for email";
+    message.classList.add('visible');
+    message.classList.remove('invisible');
+    e.preventDefault();
+  }
+});
