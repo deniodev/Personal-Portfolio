@@ -293,7 +293,7 @@ form.addEventListener('submit', (e) => {
     message.classList.add('invisible');
     form.onsubmit();
   } else {
-    message.innerHTML = "Use lower case for email";
+    message.innerHTML = 'Use lower case for email';
     message.classList.add('visible');
     message.classList.remove('invisible');
     e.preventDefault();
