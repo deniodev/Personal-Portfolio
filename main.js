@@ -19,7 +19,7 @@ const projects = document.getElementById('cards');
 const firstProjects = [{
   grid: 1,
   id: 2,
-  title: 'Professional art <br> printing Data More',
+  title: 'Data Dashboard <br> Healthcare',
   text: 'A daily selection of privately personalized reads; no accounts of sign-ups required. has been the  industry standard',
   skills: {
     skill1: 'html',
@@ -132,13 +132,15 @@ renderSecondProjects(secondProjects, projects);
 const modalCards = [
   {
     id: 1,
-    title: 'Multi Post Stories',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/popup-card1.png',
+    title: 'To-Do-List',
+    text: 'A to-do list app is a productivity tool designed to help users create and maintain lists of tasks they need to complete. It allows users to edit their tasks even after they are saved. The app is built with CSS, HTML, and JavaScript.',
+    image: './images/Screenshot 2023-05-09 154551.png',
+    demo: 'https://deniodev.github.io/To-Do-List/dist/',
+    source: 'https://github.com/deniodev/To-Do-List',
     features: {
       tech1: 'HTML',
-      tech2: 'Boostrap',
-      tech3: 'Ruby on rails',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
     },
   },
   {
@@ -146,6 +148,8 @@ const modalCards = [
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/popup-card2.png',
+    demo: '#',
+    source: '#',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -157,6 +161,8 @@ const modalCards = [
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/popup-card3.png',
+    demo: '#',
+    source: '#',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -168,6 +174,8 @@ const modalCards = [
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/popup-card4.png',
+    demo: '#',
+    source: '#',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -179,6 +187,8 @@ const modalCards = [
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/popup-card5.png',
+    demo: '#',
+    source: '#',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -190,6 +200,8 @@ const modalCards = [
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/popup-card6.png',
+    demo: '#',
+    source: '#',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -201,6 +213,8 @@ const modalCards = [
     title: 'Keeping track of hundreds  of components website',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/popup-card7.png',
+    demo: '#',
+    source: '#',
     features: {
       tech1: 'HTML',
       tech2: 'Boostrap',
@@ -233,9 +247,9 @@ const renderPopup = (modalCards, popupContainer) => {
                               <p class="popup-text">${e.text}</p>
                             </div>
                             <div class="popup-project-btn-container">
-                              <a href="#"><button class="project-btn-popup">See Live <img src="./images/popup2.png"
+                              <a href="${e.demo}" target="_blank"><button class="project-btn-popup">See Live <img src="./images/popup2.png"
                               alt="See Live"></button></a>
-                              <a href="#"><button class="project-btn-popup">See Source <img src="./images/popup1.png"
+                              <a href="${e.source}" target="_blank"><button class="project-btn-popup">See Source <img src="./images/popup1.png"
                               alt="Github"></button></a>
                             </div>
                             </div>`;

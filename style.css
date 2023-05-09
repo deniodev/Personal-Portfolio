@@ -449,6 +449,7 @@ main {
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 5%;
+  cursor: pointer;
 }
 
 .feature-btn {
@@ -485,6 +486,7 @@ main {
   font-weight: 700;
   font-size: 1em;
   margin-bottom: 5%;
+  cursor: pointer;
 }
 
 #overlay {
