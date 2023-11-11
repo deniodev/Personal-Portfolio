@@ -54,7 +54,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Personal Portfolio] <a name="about-project"></a>
+# 📖 Personal Portfolio <a name="about-project"></a>
 
 **[Personal Portfolio]** This my Portfolio setup and mobile first 
 
