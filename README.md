@@ -127,7 +127,7 @@ Example command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 
 👤 **Denio Nhanale**
