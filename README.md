@@ -56,7 +56,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Personal Portfolio <a name="about-project"></a>
 
-**[Personal Portfolio]** This my Portfolio setup and mobile first 
+**Personal Portfolio** This my Portfolio setup and mobile first 
 
 ## 🛠 Built With <a name="built-with">HTML, CSS</a>
 - Html & Css
